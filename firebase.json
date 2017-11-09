@@ -1,1 +1,51 @@
-{}
+{
+  "rewrites": [
+    {
+      "source": "**",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "**",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, no-cache"
+        },
+        {
+          "key": "Access-Control-Max-Age",
+          "value": "600"
+        }
+      ]
+    },
+    {
+      "source": "/sw.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "private, no-cache"
+        }
+      ]
+    },
+    {
+      "source": "**/*.chunk.*.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000"
+        }
+      ]
+    },
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</bundle.a7e9d.js>; rel=preload; as=script, </style.18ae2.css>; rel=preload; as=style, </route-home.chunk.900cb.js>; rel=preload; as=script"
+        }
+      ]
+    }
+  ],
+  "public": "build"
+}

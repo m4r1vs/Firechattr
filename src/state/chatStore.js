@@ -14,7 +14,6 @@ class Message {
 
 class ChatStore {
   @observable messages = [];
-  @observable loaded = true;
 
   @action addMessage(id, message) {
   	this.messages.push(
