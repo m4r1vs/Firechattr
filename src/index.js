@@ -1,4 +1,7 @@
 import './style';
 import App from './components/app';
+import ChatStore from './state/chatStore';
 
-export default App;
+const Root = () => <App chatStore={ChatStore} />;
+
+export default Root;
