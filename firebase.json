@@ -42,7 +42,7 @@
       "headers": [
         {
           "key": "Link",
-          "value": "</bundle.a7e9d.js>; rel=preload; as=script, </style.18ae2.css>; rel=preload; as=style, </route-home.chunk.900cb.js>; rel=preload; as=script"
+          "value": "</bundle.b01a1.js>; rel=preload; as=script, </style.2914f.css>; rel=preload; as=style, </route-home.chunk.45408.js>; rel=preload; as=script"
         }
       ]
     }

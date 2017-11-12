@@ -8,7 +8,10 @@ const initState = chatStore => {
 			snapshot.docChanges.forEach((docChange) => {
 				switch (docChange.type) {
 					case 'added':
-            chatStore.addMessage(docChange.doc.id, docChange.doc.data());
+						chatStore.addMessage(docChange.doc.id, docChange.doc.data());
+						break;
+					case 'modified':
+						chatStore.editMessage(docChange.doc.id, docChange.doc.data());
 						break;
 					default:
 						console.error('Can not remove or modify messages yet!');

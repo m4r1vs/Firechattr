@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "firechattr",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
@@ -25,10 +25,12 @@
   "dependencies": {
     "firebase": "^4.6.1",
     "mobx": "^3.3.1",
+    "node-sass": "^4.6.1",
     "preact": "^8.2.1",
     "preact-compat": "^3.17.0",
     "preact-material-components": "^1.2.4",
     "preact-mobx": "^0.1.4",
-    "preact-router": "^2.5.5"
+    "preact-router": "^2.5.5",
+    "sass-loader": "^6.0.6"
   }
 }

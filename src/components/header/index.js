@@ -7,7 +7,7 @@ export default class Header extends Component {
 	render() {
 		return (
 			<div>
-				<Toolbar className="toolbar">
+				<Toolbar className="toolbar" fixed>
 					<Toolbar.Row>
 						<Toolbar.Section align-start={true}>
 							<Toolbar.Title>

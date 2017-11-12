@@ -2,4 +2,27 @@
 	padding: 20px;
 	min-height: 100%;
 	width: 100%;
+	max-width: 720px;
+	margin: 72px auto 0 auto;
+}
+
+.card {
+	margin: 8px 0;
+	color: #fff !important;
+	position: relative;
+}
+
+.like {
+	position: absolute;
+	right: 16px;
+	top: 16px;
+	background: transparent;
+	font-size: 24px;
+	cursor: pointer;
+	color: #fff;
+	border: none;
+}
+
+.input {
+	margin: 8px 16px !important;
 }

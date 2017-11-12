@@ -1,0 +1,76 @@
+.inputGroup {
+  position: relative;
+
+  input[type=text], input[type=password] {
+    background: transparent;
+    font-size: 18px;
+    padding: 28px 0 2px 3px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #757575;
+    appearance: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus~label,
+    &:valid~label {
+      bottom: 26px;
+      font-size: 14px;
+      color: #3f51b5;
+    }
+
+    &:focus~span.bar:before,
+    &:focus~span.bar:after {
+      width: 50%;
+    }
+
+    &[incomplete=true]~span.bar:before,
+    &[incomplete=true]~span.bar:after {
+      background: #ff1945 !important;
+      width: 50%;
+    }
+  }
+
+  input[incomplete=true]~label {
+    color: #ff1945 !important;
+  }
+
+  span.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #3f51b5;
+
+    &:before,
+    &:after {
+      content: '';
+      height: 2px;
+      width: 0;
+      bottom: 0px;
+      position: absolute;
+      background: inherit;
+      transition: 0.2s ease all;
+    }
+
+    &:after {
+      left: 50%;
+    }
+
+    &:before {
+      right: 50%;
+    }
+  }
+
+  label {
+    color: #999;
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    left: 3px;
+    bottom: 5px;
+    transition: 0.2s ease all;
+  }
+}
